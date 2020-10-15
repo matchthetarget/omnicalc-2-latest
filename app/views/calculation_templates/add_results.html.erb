@@ -1,0 +1,22 @@
+<h1>Addition</h1>
+
+<dl>
+  <dt>First number</dt>
+  <dd><%= @first_number %></dd>
+
+  <dt>Second number</dt>
+  <dd><%= @second_number %></dd>
+
+  <dt>Result</dt>
+  <dd><%= @result %></dd>
+</dl>
+
+<ul>
+  <% @log.each do |calculation| %>
+    <li>
+      <%= calculation.fetch(:first) %> + <%= calculation.fetch(:second) %> = <%= calculation.fetch(:sum) %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/add">Do another addition</a>
