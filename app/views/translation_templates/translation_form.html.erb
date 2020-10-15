@@ -1,0 +1,19 @@
+<h1>New translation</h1>
+
+<form action="/wizard_translate">
+  <label for="body">Say what?</label>
+  <textarea name="body" id="body"></textarea>
+
+  <select name="lang">
+    <% @languages.each do |language| %>
+      <option value="<%= language.code %>">
+        <%= language.name %>
+      </option>
+    <% end %>
+  </select>
+
+  <label for="phone">To who?</label>
+  <input id="phone" name="telephone" type="text">
+
+  <button>Translate</button>
+</form>
