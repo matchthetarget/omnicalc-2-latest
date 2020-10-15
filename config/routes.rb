@@ -3,6 +3,15 @@ Rails.application.routes.draw do
   get("/muggle_translate", { :controller => "translations", :action => "translation_form" })
   get("/wizard_translate", { :controller => "translations", :action => "translate" })
 
+  get("/street_to_coords/new", { :controller => "api", :action => "street_to_coords_form" })
+  get("/street_to_coords/results", { :controller => "api", :action => "street_to_coords" })
+
+  get("/coords_to_weather/new", { :controller => "api", :action => "coords_to_weather_form" })
+  get("/coords_to_weather/results", { :controller => "api", :action => "coords_to_weather" })
+  
+  get("/street_to_weather/new", { :controller => "api", :action => "street_to_weather_form" })
+  get("/street_to_weather/results", { :controller => "api", :action => "street_to_weather" })
+
   get("/add", { :controller => "calculations", :action => "addition_form" })
   get("/wizard_add", { :controller => "calculations", :action => "add" })
 
