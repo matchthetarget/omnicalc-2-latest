@@ -4,7 +4,7 @@
 
 The username and password is on Canvas — here is our target:
 
-[https://form-intro.matchthetarget.com/](https://form-intro.matchthetarget.com/)
+[https://omnicalc-2.matchthetarget.com/](https://omnicalc-2.herokuapp.com/)
 
 ## Query strings
 
